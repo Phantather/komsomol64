@@ -1,0 +1,67 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../images/hero/shcool.jpg") top left/100% 100% no-repeat;
+  //background-attachment: fixed;
+
+  &__content {
+    text-align: center;
+    color: white;
+
+    &-title {
+      @include font(bold, 72px, 86px);
+      text-transform: uppercase;
+    }
+
+    &-description {
+      @include font(500, 24px, 150%);
+      margin: 20px 0;
+      text-transform: uppercase;
+    }
+
+    &-btn {
+      @include font(normal, 14px, 17px);
+      color: #fff;
+      text-transform: uppercase;
+      background: transparent;
+      padding: 16px 52px;
+      border: 1px solid #FFFFFF;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: .6s;
+
+      &:hover {
+        background-color: white;
+        color: $primary-color;
+        transition: .6s;
+      }
+    }
+    }
+  }
+
+
+  //&__content{
+  //  &-title {
+  //    text-transform: uppercase;
+  //    text-align: center;
+  //  }
+  //  &-description{
+  //    font-size: 24px;
+  //    text-align: center;
+  //    margin: 39px 0;
+  //  }
+  //  &-btn{
+  //    display: block;
+  //    margin:  0 auto;
+  //    padding: 18px 55px;
+  //    text-align: center;
+  //    border: none;
+  //    border-radius: 15px;
+  //    cursor: pointer;
+  //    color: red;
+  //  }
+  //
+  //}
+

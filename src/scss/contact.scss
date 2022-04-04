@@ -1,0 +1,92 @@
+.contact{
+  padding: 117px 0 78px;
+  background-color: #FFFFFF;
+
+  &__title{
+    @include font(600, 36px, 43px);
+    margin-bottom: 53px;
+  }
+  &__desc{
+    @include font(normal, 14px, 140%);
+  }
+  &__form{
+    width: 540px;
+  }
+  &__block{
+    margin-bottom: 24px;
+  }
+  &__input{
+    height: 60px;
+  }
+  &__input-text{
+    &::placeholder{
+      @include font(normal, 16px, 19px);
+      color: rgba(19, 39, 67, 0.5);
+    }
+    width: 46.8%;
+    height: 60px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 28px;
+    &-1{
+      margin-right: 30px;
+    }
+  }
+  &__input-tel{
+    &::placeholder{
+      @include font(normal, 16px, 19px);
+      color: rgba(19, 39, 67, 0.5);
+    }
+    width: 100%;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 28px;
+  }
+  #select__id{
+    @include font(normal, 16px, 19px);
+    color: rgba(19, 39, 67, 0.5);
+    width: 100%;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 0 28px;
+  }
+  &__btn{
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    width: 35%;
+    height: 50px;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    background-color:  $primary-color;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .6s;
+    &:hover{
+      transform-origin: center bottom;
+      transform: rotateX(-90deg) translateY(100%);
+    }
+    &:after {
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      content: 'Submit Now';
+      text-transform: uppercase;
+      background: white;
+      color: $primary-color;
+      border-radius: 6px;
+      border: 1.5px solid #ED4C5C;
+      transform-origin: left bottom;
+      transform: rotateX(90deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  }

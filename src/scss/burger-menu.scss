@@ -1,0 +1,27 @@
+.mobile-btn{
+  width: 55px;
+  height: 45px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  &__span{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+
+    &::before, &::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+    }
+    &::before{
+      top: -10px;
+    }
+    &::after{
+      top: 10px;
+    }
+  }
+}

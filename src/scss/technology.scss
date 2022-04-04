@@ -1,0 +1,47 @@
+.technology {
+  padding: 63px 0 108px;
+
+  &__title {
+    @include font(600, 36px, 43px);
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  &__subtitle{
+    @include font(bold, 100px, 120px);
+    text-align: center;
+    color: rgba(16, 16, 16, 0.08);
+  }
+
+  &__content-block {
+    margin-bottom: 19px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    &-title {
+      @include font(bold, 18px, 22px);
+      margin-bottom: 10px;
+    }
+
+    &-decs {
+      @include font(normal, 12px, 14px);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+
+  &__descr {
+    @include font(normal, 18px, 14px);
+    text-align: center;
+  }
+
+}

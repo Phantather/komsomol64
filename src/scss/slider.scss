@@ -1,0 +1,44 @@
+.slider{
+  padding: 94px 0 95px;
+  background-color: $primary-color;
+  color: white;
+
+  &__title{
+    @include font(600, 36px, 43px);
+  }
+  &__desc{
+    @include font(normal, 14px, 140%);
+    margin: 24px 0 44px;
+  }
+  &__logo{
+    position: relative;
+    float: left;
+  }
+  &__icon{
+    font-size: 28px;
+    margin-right: 26px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.owl-item.active img{
+  transform: scale(1.2);
+  transition: .3s;
+}
+.owl-item img{
+  border-radius: 7px;
+  transition: .3s;
+}
+.owl-item{
+  opacity: 50%;
+}
+.owl-item.active{
+  z-index: 2;
+  opacity: 100%;
+}
+.owl-stage{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

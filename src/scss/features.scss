@@ -1,0 +1,56 @@
+.features{
+  padding: 63px 0 180px;
+  background-color: #FAFAFA;
+
+  &__title{
+    @include font(600, 36px, 43px);
+    text-align: center;
+    margin-bottom: 63px;
+  }
+  &__item{
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  &__content{
+    width: 293px;
+    padding: 25px 0 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%, -45%);
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    &-title{
+      @include font(bold, 18px, 22px);
+    }
+    &-decs{
+      @include font(normal, 12px, 150%);
+      margin: 20px 0 25px;
+    }
+    &-link{
+      @include font(normal, 12px, 150%);
+      color: $primary-color;
+      position: relative;
+      &::after{
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+      }
+      &:hover::after{
+        width: 100%;
+        transition: 0.3s;
+      }
+    }
+
+  }
+
+
+}

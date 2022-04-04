@@ -1,0 +1,46 @@
+.footer{
+  padding: 85px 0 86px;
+  background-color: #FAFAFA;
+
+  &__title{
+    @include font(bold, 18px, 22px);
+    margin-bottom: 33px;
+  }
+  &__desc{
+    @include font(normal, 12px, 150%);
+    color: #101010;
+  }
+  &__decs{
+    @include font(normal, 12px, 14px);
+    margin-top: 144px;
+  }
+  &__link{
+    @include font(normal, 12px, 150%);
+    color: #101010;
+    cursor: pointer;
+    transition: .3s;
+    &-info{
+      list-style-type: none;
+    }
+    &-a{
+      @include font(normal, 12px, 150%);
+      color: #101010;
+    }
+  }
+  &__icons{
+    margin-top: 21px;
+  }
+  &__icon{
+    font-size: 14px;
+    color: black;
+    margin-right: 16px;
+  }
+  &__logo{
+    cursor: pointer;
+  }
+  &__copyright{
+    @include font(normal, 12px, 14px);
+    margin: 86px 0 0;
+  }
+
+}

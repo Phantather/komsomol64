@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth
+}
+
+body{
+  font-family: lato, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-6{
+  width: 50%;
+  padding: 0 15px;
+}
+.col-4{
+  width: 33.3%;
+  padding: 0 15px;
+}
+
+.col-3{
+  width: 25%;
+  padding: 0 15px;
+}
+
+@mixin font($fw, $fs, $lh){
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+$primary-color: #ED4C5C;
+
+@import "header";
+@import "hero";
+@import "video";
+@import "features";
+@import "technology";
+@import "slider";
+@import "contact";
+@import "footer";
+@import "burger-menu";
+@import "media";
+
+
